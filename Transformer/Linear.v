@@ -15,8 +15,8 @@
 
 From Transformer Require Import Tensor.
 From Transformer Require Import Config.
-Require Import Coq.Init.Nat.
-Require Import Coq.Arith.PeanoNat.
+From Stdlib Require Import Init.Nat.
+From Stdlib Require Import Arith.PeanoNat.
 
 (** ** Linear Layer Type *)
 

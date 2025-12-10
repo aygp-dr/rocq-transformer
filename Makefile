@@ -1,7 +1,7 @@
 # Makefile for Rocq Transformer Implementation
-# This Makefile uses coq_makefile to generate the actual build rules
+# Uses `rocq makefile` to generate build rules
 
-.PHONY: all clean
+.PHONY: all clean help
 
 # Default target: generate Makefile.coq and build all modules
 all: Makefile.coq
@@ -9,7 +9,7 @@ all: Makefile.coq
 
 # Generate Makefile.coq from _CoqProject
 Makefile.coq: _CoqProject
-	coq_makefile -f _CoqProject -o Makefile.coq
+	rocq makefile -f _CoqProject -o Makefile.coq
 
 # Clean all generated files
 clean: Makefile.coq

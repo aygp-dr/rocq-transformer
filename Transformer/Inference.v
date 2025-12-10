@@ -20,10 +20,10 @@
 From Transformer Require Import Tensor.
 From Transformer Require Import Model.
 From Transformer Require Import Decoder.
-Require Import Coq.Init.Nat.
-Require Import Coq.Lists.List.
-Require Import Coq.Arith.PeanoNat.
-Require Import Coq.micromega.Lia.
+From Stdlib Require Import Init.Nat.
+From Stdlib Require Import Lists.List.
+From Stdlib Require Import Arith.PeanoNat.
+From Stdlib Require Import micromega.Lia.
 Import ListNotations.
 
 (** ** Greedy Decoding *)

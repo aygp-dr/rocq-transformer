@@ -12,8 +12,8 @@
     - Type-safe dimension tracking with proofs of sequence length constraints *)
 
 From Transformer Require Import Tensor.
-Require Import Coq.Init.Nat.
-Require Import Coq.Arith.PeanoNat.
+From Stdlib Require Import Init.Nat.
+From Stdlib Require Import Arith.PeanoNat.
 
 (** ** Token Embeddings *)
 

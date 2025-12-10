@@ -1,18 +1,18 @@
-# Transformer (Coq)
+# Transformer (Rocq)
 
 Formal specification of the Transformer architecture with compile-time dimension safety.
 
 ## Build
 
 ```bash
-nix develop                    # Coq 8.18 + CoqIDE
+nix develop                    # Rocq 9.0
 make                           # Build all modules
 make Transformer/Tensor.vo     # Build specific module
 ```
 
 ## Module Namespace
 
-```coq
+```rocq
 From Transformer Require Import Tensor Config Attention Model.
 ```
 

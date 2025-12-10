@@ -9,9 +9,9 @@
     in the type system for verification purposes, not to perform actual
     tensor computations. *)
 
-Require Import Coq.Init.Nat.
-Require Import Coq.Lists.List.
-Require Import Coq.Arith.PeanoNat.
+From Stdlib Require Import Init.Nat.
+From Stdlib Require Import Lists.List.
+From Stdlib Require Import Arith.PeanoNat.
 Import ListNotations.
 
 (** ** Type-Level Dimension Specifications *)

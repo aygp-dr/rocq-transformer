@@ -25,9 +25,9 @@
 
 From Transformer Require Import Tensor.
 From Transformer Require Import Linear.
-Require Import Coq.Init.Nat.
-Require Import Coq.Arith.PeanoNat.
-Require Import Coq.Lists.List.
+From Stdlib Require Import Init.Nat.
+From Stdlib Require Import Arith.PeanoNat.
+From Stdlib Require Import Lists.List.
 Import ListNotations.
 
 (** ** Feed-Forward Network Type *)

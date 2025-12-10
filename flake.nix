@@ -1,5 +1,5 @@
 {
-  description = "Rocq Annotated Transformer - Formally verified transformer architecture";
+  description = "Formally verified Transformer architecture in Rocq";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -11,9 +11,8 @@
       let
         pkgs = nixpkgs.legacyPackages.${system};
 
-        coq = pkgs.coq_8_18;
-
-        coqPackages = pkgs.coqPackages_8_18;
+        rocq = pkgs.rocqPackages.rocq-core;
+        stdlib = pkgs.rocqPackages.stdlib;
 
       in {
         packages = {
@@ -23,20 +22,20 @@
 
             src = ./.;
 
-            nativeBuildInputs = [ coq ];
+            nativeBuildInputs = [ rocq stdlib ];
 
             buildPhase = ''
               make all
             '';
 
             installPhase = ''
-              mkdir -p $out/lib/coq/${coq.coq-version}/user-contrib/Transformer
-              cp -r Transformer/*.vo $out/lib/coq/${coq.coq-version}/user-contrib/Transformer/
-              cp -r Transformer/*.glob $out/lib/coq/${coq.coq-version}/user-contrib/Transformer/
+              mkdir -p $out/lib/rocq/${rocq.version}/user-contrib/Transformer
+              cp -r Transformer/*.vo $out/lib/rocq/${rocq.version}/user-contrib/Transformer/
+              cp -r Transformer/*.glob $out/lib/rocq/${rocq.version}/user-contrib/Transformer/
             '';
 
             meta = with pkgs.lib; {
-              description = "Formally verified Transformer architecture in Rocq/Coq";
+              description = "Formally verified Transformer architecture in Rocq";
               license = licenses.mit;
               maintainers = [ ];
             };
@@ -47,19 +46,18 @@
           name = "rocq-transformer-dev";
 
           buildInputs = [
-            coq
-            coqPackages.coqide  # Optional: CoqIDE for interactive development
+            rocq
+            stdlib
           ];
 
           shellHook = ''
             echo "Rocq Transformer Development Environment"
             echo ""
-            echo "Coq version: $(coqc --version | head -1)"
+            echo "Rocq version: $(rocq --version 2>/dev/null || coqc --version | head -1)"
             echo ""
             echo "Available commands:"
             echo "  make          - Build all modules"
             echo "  make clean    - Clean build artifacts"
-            echo "  coqide        - Launch CoqIDE"
             echo ""
           '';
         };

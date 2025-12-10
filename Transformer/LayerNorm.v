@@ -18,9 +18,9 @@
     dimension preservation constraints in the type system for verification. *)
 
 From Transformer Require Import Tensor.
-Require Import Coq.Init.Nat.
-Require Import Coq.Arith.PeanoNat.
-Require Import Coq.Lists.List.
+From Stdlib Require Import Init.Nat.
+From Stdlib Require Import Arith.PeanoNat.
+From Stdlib Require Import Lists.List.
 Import ListNotations.
 
 (** ** Layer Normalization Type *)

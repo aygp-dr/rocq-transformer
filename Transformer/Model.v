@@ -51,8 +51,8 @@ From Transformer Require Import Linear.
 From Transformer Require Import Encoder.
 From Transformer Require Import Decoder.
 From Transformer Require Import Embedding.
-Require Import Coq.Init.Nat.
-Require Import Coq.Arith.PeanoNat.
+From Stdlib Require Import Init.Nat.
+From Stdlib Require Import Arith.PeanoNat.
 
 (** ** Output Generator *)
 

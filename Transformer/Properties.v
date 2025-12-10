@@ -28,11 +28,11 @@ From Transformer Require Import Encoder.
 From Transformer Require Import Decoder.
 From Transformer Require Import Embedding.
 From Transformer Require Import Model.
-Require Import Coq.Init.Nat.
-Require Import Coq.Arith.PeanoNat.
-Require Import Coq.Arith.Arith.
-Require Import Coq.micromega.Lia.
-Require Import Coq.Lists.List.
+From Stdlib Require Import Init.Nat.
+From Stdlib Require Import Arith.PeanoNat.
+From Stdlib Require Import Arith.Arith.
+From Stdlib Require Import micromega.Lia.
+From Stdlib Require Import Lists.List.
 Import ListNotations.
 
 (** * Section 1: Attention Dimension Preservation Properties *)

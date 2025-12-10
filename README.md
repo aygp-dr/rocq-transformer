@@ -1,6 +1,6 @@
 # Transformer
 
-A machine-checked formal specification of the Transformer architecture in Coq.
+A machine-checked formal specification of the Transformer architecture in Rocq.
 
 This project encodes the structural invariants of ["Attention is All You
 Need"](https://arxiv.org/abs/1706.03762) (Vaswani et al., 2017) as dependent
@@ -20,7 +20,7 @@ If this code compiles, then:
 ## Building
 
 ```bash
-nix develop   # Enter environment with Coq 8.18
+nix develop   # Enter environment with Rocq 9.0
 make          # Compile all 13 modules
 ```
 
@@ -112,7 +112,7 @@ it respects the dimensional constraints.
 
 This formal specification corresponds to the Haskell implementation at
 [jwiegley/hs-annotated-transformer](https://github.com/jwiegley/hs-annotated-transformer),
-which provides an executable reference. The Coq version captures constraints
+which provides an executable reference. The Rocq version captures constraints
 that are only documented in comments in the Haskell code.
 
 ## License
