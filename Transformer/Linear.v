@@ -13,8 +13,8 @@
     actual weight data, and operations are axiomatized. The goal is to capture
     dimension transformation constraints in the type system for verification. *)
 
-From RocqTransformer Require Import Tensor.
-From RocqTransformer Require Import Config.
+From Transformer Require Import Tensor.
+From Transformer Require Import Config.
 Require Import Coq.Init.Nat.
 Require Import Coq.Arith.PeanoNat.
 

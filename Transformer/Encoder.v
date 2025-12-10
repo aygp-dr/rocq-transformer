@@ -68,12 +68,12 @@
     * Easier gradient flow in early training
     * Less sensitive to hyperparameter choices *)
 
-From RocqTransformer Require Import Tensor.
-From RocqTransformer Require Import Config.
-From RocqTransformer Require Import Attention.
-From RocqTransformer Require Import FeedForward.
-From RocqTransformer Require Import LayerNorm.
-From RocqTransformer Require Import Sublayer.
+From Transformer Require Import Tensor.
+From Transformer Require Import Config.
+From Transformer Require Import Attention.
+From Transformer Require Import FeedForward.
+From Transformer Require Import LayerNorm.
+From Transformer Require Import Sublayer.
 Require Import Coq.Init.Nat.
 Require Import Coq.Arith.PeanoNat.
 Require Import Coq.Lists.List.

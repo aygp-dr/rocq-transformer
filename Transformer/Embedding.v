@@ -11,7 +11,7 @@
     - Fixed sinusoidal positional encodings with multi-scale frequencies
     - Type-safe dimension tracking with proofs of sequence length constraints *)
 
-From RocqTransformer Require Import Tensor.
+From Transformer Require Import Tensor.
 Require Import Coq.Init.Nat.
 Require Import Coq.Arith.PeanoNat.
 

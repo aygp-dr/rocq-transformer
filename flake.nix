@@ -30,9 +30,9 @@
             '';
 
             installPhase = ''
-              mkdir -p $out/lib/coq/${coq.coq-version}/user-contrib/RocqTransformer
-              cp -r RocqTransformer/*.vo $out/lib/coq/${coq.coq-version}/user-contrib/RocqTransformer/
-              cp -r RocqTransformer/*.glob $out/lib/coq/${coq.coq-version}/user-contrib/RocqTransformer/
+              mkdir -p $out/lib/coq/${coq.coq-version}/user-contrib/Transformer
+              cp -r Transformer/*.vo $out/lib/coq/${coq.coq-version}/user-contrib/Transformer/
+              cp -r Transformer/*.glob $out/lib/coq/${coq.coq-version}/user-contrib/Transformer/
             '';
 
             meta = with pkgs.lib; {

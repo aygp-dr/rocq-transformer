@@ -1,16 +1,16 @@
--Q . RocqTransformer
+-Q . Transformer
 -arg -w -arg -notation-overridden
 
-RocqTransformer/Tensor.v
-RocqTransformer/Config.v
-RocqTransformer/Linear.v
-RocqTransformer/Embedding.v
-RocqTransformer/LayerNorm.v
-RocqTransformer/FeedForward.v
-RocqTransformer/Attention.v
-RocqTransformer/Sublayer.v
-RocqTransformer/Encoder.v
-RocqTransformer/Decoder.v
-RocqTransformer/Model.v
-RocqTransformer/Inference.v
-RocqTransformer/Properties.v
+Transformer/Tensor.v
+Transformer/Config.v
+Transformer/Linear.v
+Transformer/Embedding.v
+Transformer/LayerNorm.v
+Transformer/FeedForward.v
+Transformer/Attention.v
+Transformer/Sublayer.v
+Transformer/Encoder.v
+Transformer/Decoder.v
+Transformer/Model.v
+Transformer/Inference.v
+Transformer/Properties.v

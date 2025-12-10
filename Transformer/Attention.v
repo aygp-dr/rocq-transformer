@@ -17,9 +17,9 @@
     - Output preserves batch and sequence dimensions
     - Proper mask broadcasting (3D mask used with 4D multi-head attention) *)
 
-From RocqTransformer Require Import Tensor.
-From RocqTransformer Require Import Config.
-From RocqTransformer Require Import Linear.
+From Transformer Require Import Tensor.
+From Transformer Require Import Config.
+From Transformer Require Import Linear.
 Require Import Coq.Init.Nat.
 Require Import Coq.Arith.PeanoNat.
 

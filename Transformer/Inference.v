@@ -17,9 +17,9 @@
     This is an ABSTRACT specification focusing on type-level guarantees
     about dimension transformations during inference. *)
 
-From RocqTransformer Require Import Tensor.
-From RocqTransformer Require Import Model.
-From RocqTransformer Require Import Decoder.
+From Transformer Require Import Tensor.
+From Transformer Require Import Model.
+From Transformer Require Import Decoder.
 Require Import Coq.Init.Nat.
 Require Import Coq.Lists.List.
 Require Import Coq.Arith.PeanoNat.

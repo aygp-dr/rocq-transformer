@@ -45,12 +45,12 @@
     concrete implementations. The goal is to capture the dimensional constraints
     and invariants of the complete model architecture in the type system. *)
 
-From RocqTransformer Require Import Tensor.
-From RocqTransformer Require Import Config.
-From RocqTransformer Require Import Linear.
-From RocqTransformer Require Import Encoder.
-From RocqTransformer Require Import Decoder.
-From RocqTransformer Require Import Embedding.
+From Transformer Require Import Tensor.
+From Transformer Require Import Config.
+From Transformer Require Import Linear.
+From Transformer Require Import Encoder.
+From Transformer Require Import Decoder.
+From Transformer Require Import Embedding.
 Require Import Coq.Init.Nat.
 Require Import Coq.Arith.PeanoNat.
 

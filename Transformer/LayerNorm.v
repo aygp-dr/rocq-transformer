@@ -17,7 +17,7 @@
     actual parameter data, and operations are axiomatized. The goal is to capture
     dimension preservation constraints in the type system for verification. *)
 
-From RocqTransformer Require Import Tensor.
+From Transformer Require Import Tensor.
 Require Import Coq.Init.Nat.
 Require Import Coq.Arith.PeanoNat.
 Require Import Coq.Lists.List.

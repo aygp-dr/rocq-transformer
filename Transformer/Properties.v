@@ -17,17 +17,17 @@
     in the type system, we gain static guarantees that the model architecture
     is structurally sound. *)
 
-From RocqTransformer Require Import Tensor.
-From RocqTransformer Require Import Config.
-From RocqTransformer Require Import Linear.
-From RocqTransformer Require Import Attention.
-From RocqTransformer Require Import FeedForward.
-From RocqTransformer Require Import LayerNorm.
-From RocqTransformer Require Import Sublayer.
-From RocqTransformer Require Import Encoder.
-From RocqTransformer Require Import Decoder.
-From RocqTransformer Require Import Embedding.
-From RocqTransformer Require Import Model.
+From Transformer Require Import Tensor.
+From Transformer Require Import Config.
+From Transformer Require Import Linear.
+From Transformer Require Import Attention.
+From Transformer Require Import FeedForward.
+From Transformer Require Import LayerNorm.
+From Transformer Require Import Sublayer.
+From Transformer Require Import Encoder.
+From Transformer Require Import Decoder.
+From Transformer Require Import Embedding.
+From Transformer Require Import Model.
 Require Import Coq.Init.Nat.
 Require Import Coq.Arith.PeanoNat.
 Require Import Coq.Arith.Arith.

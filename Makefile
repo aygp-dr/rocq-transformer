@@ -35,5 +35,5 @@ help:
 	@echo "  make <module>.vos     - Quick compile specific module"
 	@echo ""
 	@echo "Example:"
-	@echo "  make RocqTransformer/Tensor.vo"
-	@echo "  make RocqTransformer/Config.vo"
+	@echo "  make Transformer/Tensor.vo"
+	@echo "  make Transformer/Config.vo"

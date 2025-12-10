@@ -33,8 +33,8 @@
     The goal is to capture dimension preservation constraints in the type
     system for verification. *)
 
-From RocqTransformer Require Import Tensor.
-From RocqTransformer Require Import LayerNorm.
+From Transformer Require Import Tensor.
+From Transformer Require Import LayerNorm.
 Require Import Coq.Init.Nat.
 Require Import Coq.Arith.PeanoNat.
 Require Import Coq.Lists.List.
