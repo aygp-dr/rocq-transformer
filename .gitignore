@@ -1,3 +1,4 @@
+# Coq/Rocq build artifacts
 *.aux
 *.glob
 *.v.d
@@ -16,21 +17,18 @@
 /.Makefile.d
 /.Makefile.coq.d
 /.coqdeps.d
-/Book.aux
-/Book.bbl
-/Book.blg
-/Book.idx
-/Book.ilg
-/Book.ind
-/Book.log
-/Book.out
-/Book.pdf
-/Book.toc
 /Makefile.coq
 /Makefile.coq.conf
-/Theory/Metacategory/ObjectsArrows
-/coqdoc.sty
-/html/
+
+# Nix
+/result
+.direnv/
+
+# Editor
+*~
+\#*\#
+.#*
+
+# Build logs
 log_*.txt
 /build.log
-/versions/
