@@ -29,21 +29,14 @@ make clean                     # Remove compiled files
 
 ### FreeBSD
 
-FreeBSD 14.3+ users need Nix for Rocq 9.1 (FreeBSD pkg only has Coq 8.20):
+Works with FreeBSD pkg's Coq 8.20.1 (COQLIB auto-detected):
 
 ```bash
-# Install Nix (single-user mode recommended on FreeBSD)
-sh <(curl -L https://nixos.org/nix/install) --no-daemon
-
-# Source nix profile
-. ~/.nix-profile/etc/profile.d/nix.sh
-
-# Enter dev shell and build
-nix develop
+pkg install coq
 gmake
 ```
 
-Without Nix, you'll see: `Neither 'rocq' nor 'coq_makefile' found.`
+The Makefile auto-detects `rocq` or `coq_makefile` and sets `COQLIB` for FreeBSD.
 
 ## The Core Ideas
 
