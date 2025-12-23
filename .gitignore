@@ -28,6 +28,7 @@
 *~
 \#*\#
 .#*
+*.bak
 
 # Build logs
 log_*.txt
