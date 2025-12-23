@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v27
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
+      - name: Build with Nix
+        run: nix build .#default
+
+      - name: Run in dev shell
+        run: |
+          nix develop --command make clean
+          nix develop --command make
+
+      - name: Verify all modules compiled
+        run: |
+          nix develop --command sh -c '
+            count=$(ls Transformer/*.vo 2>/dev/null | wc -l)
+            echo "Compiled $count modules"
+            if [ "$count" -ne 13 ]; then
+              echo "Expected 13 modules, got $count"
+              exit 1
+            fi
+          '
+
+  nix-flake-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v27
+        with:
+          nix_path: nixpkgs=channel:nixos-unstable
+
+      - name: Nix flake check
+        run: nix flake check
