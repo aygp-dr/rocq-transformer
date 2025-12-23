@@ -4,8 +4,8 @@
     LayerNorm(x) = gamma * (x - mean) / std + beta *)
 
 From Transformer Require Import Tensor.
-From Stdlib Require Import Init.Nat.
-From Stdlib Require Import Lists.List.
+From Coq Require Import Init.Nat.
+From Coq Require Import Lists.List.
 Import ListNotations.
 
 (** LayerNorm with gamma (scale) and beta (shift) parameters. *)

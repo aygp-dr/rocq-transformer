@@ -10,8 +10,8 @@
 
 From Transformer Require Import Tensor.
 From Transformer Require Import Linear.
-From Stdlib Require Import Init.Nat.
-From Stdlib Require Import Lists.List.
+From Coq Require Import Init.Nat.
+From Coq Require Import Lists.List.
 Import ListNotations.
 
 (** ** FeedForward Type *)

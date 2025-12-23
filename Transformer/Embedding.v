@@ -7,8 +7,8 @@
     positional_forward: add sinusoidal position encoding *)
 
 From Transformer Require Import Tensor.
-From Stdlib Require Import Init.Nat.
-From Stdlib Require Import Lists.List.
+From Coq Require Import Init.Nat.
+From Coq Require Import Lists.List.
 Import ListNotations.
 
 (** ** Token Embeddings *)

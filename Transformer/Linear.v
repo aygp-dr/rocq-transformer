@@ -8,7 +8,7 @@
     and the feed-forward network layers. *)
 
 From Transformer Require Import Tensor.
-From Stdlib Require Import Init.Nat.
+From Coq Require Import Init.Nat.
 
 (** ** Linear Layer Type *)
 

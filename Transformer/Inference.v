@@ -10,10 +10,10 @@ From Transformer Require Import Model.
 From Transformer Require Import Decoder.
 From Transformer Require Import Embedding.
 From Transformer Require Import Linear.
-From Stdlib Require Import Init.Nat.
-From Stdlib Require Import Lists.List.
-From Stdlib Require Import Arith.PeanoNat.
-From Stdlib Require Import Lia.
+From Coq Require Import Init.Nat.
+From Coq Require Import Lists.List.
+From Coq Require Import Arith.PeanoNat.
+From Coq Require Import Lia.
 Import ListNotations.
 
 (** ** Arithmetic Lemmas for Type Coercions *)

@@ -6,8 +6,8 @@
 
 From Transformer Require Import Tensor.
 From Transformer Require Import LayerNorm.
-From Stdlib Require Import Init.Nat.
-From Stdlib Require Import Lists.List.
+From Coq Require Import Init.Nat.
+From Coq Require Import Lists.List.
 Import ListNotations.
 
 (** SublayerConnection wraps a sublayer with normalization and residual. *)

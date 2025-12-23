@@ -12,8 +12,8 @@ From Transformer Require Import Linear.
 From Transformer Require Import Encoder.
 From Transformer Require Import Decoder.
 From Transformer Require Import Embedding.
-From Stdlib Require Import Init.Nat.
-From Stdlib Require Import Lists.List.
+From Coq Require Import Init.Nat.
+From Coq Require Import Lists.List.
 Import ListNotations.
 
 (** ** Generator *)

@@ -11,10 +11,10 @@
     We implement ~20 structural operations with real Rocq code while keeping
     true numerical primitives as Parameters. *)
 
-From Stdlib Require Import Init.Nat.
-From Stdlib Require Import Lists.List.
-From Stdlib Require Import Arith.PeanoNat.
-From Stdlib Require Import Bool.Bool.
+From Coq Require Import Init.Nat.
+From Coq Require Import Lists.List.
+From Coq Require Import Arith.PeanoNat.
+From Coq Require Import Bool.Bool.
 Import ListNotations.
 
 (** ** Type-Level Dimension Specifications *)

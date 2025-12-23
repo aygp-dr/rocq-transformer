@@ -7,10 +7,10 @@
     divisible by num_heads, ensuring that multi-head attention can split
     the model dimension evenly across all heads. *)
 
-From Stdlib Require Import Init.Nat.
-From Stdlib Require Import Arith.PeanoNat.
-From Stdlib Require Import Arith.Arith.
-From Stdlib Require Import micromega.Lia.
+From Coq Require Import Init.Nat.
+From Coq Require Import Arith.PeanoNat.
+From Coq Require Import Arith.Arith.
+From Coq Require Import micromega.Lia.
 
 (** ** Divisibility Predicate *)
 

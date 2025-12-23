@@ -11,8 +11,8 @@ From Transformer Require Import Attention.
 From Transformer Require Import FeedForward.
 From Transformer Require Import LayerNorm.
 From Transformer Require Import Sublayer.
-From Stdlib Require Import Init.Nat.
-From Stdlib Require Import Lists.List.
+From Coq Require Import Init.Nat.
+From Coq Require Import Lists.List.
 Import ListNotations.
 
 (** ** Encoder Layer *)
