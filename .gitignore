@@ -33,3 +33,6 @@
 # Build logs
 log_*.txt
 /build.log
+
+# OCaml extraction (generated)
+/extracted/

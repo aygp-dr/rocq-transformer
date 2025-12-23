@@ -30,8 +30,8 @@ jobs:
           nix develop --command sh -c '
             count=$(ls Transformer/*.vo 2>/dev/null | wc -l)
             echo "Compiled $count modules"
-            if [ "$count" -ne 14 ]; then
-              echo "Expected 14 modules, got $count"
+            if [ "$count" -ne 15 ]; then
+              echo "Expected 15 modules, got $count"
               exit 1
             fi
           '
