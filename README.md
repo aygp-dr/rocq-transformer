@@ -27,6 +27,24 @@ make                           # Compile all 13 modules (~10 seconds)
 make clean                     # Remove compiled files
 ```
 
+### FreeBSD
+
+FreeBSD 14.3+ users need Nix for Rocq 9.1 (FreeBSD pkg only has Coq 8.20):
+
+```bash
+# Install Nix (single-user mode recommended on FreeBSD)
+sh <(curl -L https://nixos.org/nix/install) --no-daemon
+
+# Source nix profile
+. ~/.nix-profile/etc/profile.d/nix.sh
+
+# Enter dev shell and build
+nix develop
+gmake
+```
+
+Without Nix, you'll see: `Neither 'rocq' nor 'coq_makefile' found.`
+
 ## The Core Ideas
 
 ### 1. Dimension-Indexed Tensors

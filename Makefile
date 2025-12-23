@@ -1,15 +1,24 @@
 # Makefile for Rocq Transformer Implementation
-# Uses `rocq makefile` to generate build rules
+# Uses `rocq makefile` to generate build rules (falls back to coq_makefile)
 
-.PHONY: all clean help
+.PHONY: all clean help check-rocq
+
+# Detect rocq or coq_makefile
+ROCQ_MAKEFILE := $(shell command -v rocq 2>/dev/null && echo "rocq makefile" || (command -v coq_makefile 2>/dev/null && echo "coq_makefile"))
 
 # Default target: generate Makefile.coq and build all modules
-all: Makefile.coq
+all: check-rocq Makefile.coq
 	$(MAKE) -f Makefile.coq all
+
+# Check that rocq/coq is available
+check-rocq:
+ifndef ROCQ_MAKEFILE
+	$(error Neither 'rocq' nor 'coq_makefile' found. Install Rocq 9.1+ via: nix develop)
+endif
 
 # Generate Makefile.coq from _CoqProject
 Makefile.coq: _CoqProject
-	rocq makefile -f _CoqProject -o Makefile.coq
+	$(ROCQ_MAKEFILE) -f _CoqProject -o Makefile.coq
 
 # Clean all generated files
 clean: Makefile.coq
