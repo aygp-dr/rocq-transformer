@@ -23,7 +23,7 @@ The type system enforces these critical invariants at compile time:
 
 ```bash
 nix develop                    # Enter environment with Rocq 9.1
-make                           # Compile all 13 modules (~10 seconds)
+make                           # Compile all 14 modules (~10 seconds)
 make clean                     # Remove compiled files
 ```
 
@@ -135,7 +135,8 @@ Transformer/
 │
 ├── Model.v         ─── Complete encoder-decoder architecture
 ├── Inference.v     ─── Greedy decoding with type-level proofs
-└── Properties.v    ─── 15 theorems proving architectural correctness
+├── Properties.v    ─── 15 theorems proving architectural correctness
+└── Semantics.v     ─── Semantic axioms (softmax sums to 1, etc.)
 ```
 
 ### Paper-to-Code Correspondence
