@@ -15,4 +15,5 @@ Transformer/Model.v
 Transformer/Inference.v
 Transformer/Properties.v
 Transformer/Semantics.v
+Transformer/Examples.v
 Transformer/Extraction.v
